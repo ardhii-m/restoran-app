@@ -1,0 +1,51 @@
+@media screen and (max-width : 531px) {
+  .nav-item {
+    display: list-item;
+  }
+  .nav {
+    z-index: 10;
+    background-color: #E4C59E;
+    width: 300px;
+    top: 60px;
+    left: 80px;
+    position: absolute;
+    transform: translate(-415px, 30px);
+  }
+
+  .open {
+    transform: translate(-150px, 30px);
+    transition: transform 0.8s ease;
+
+  }
+  
+}
+
+@media screen and (min-width: 531px) {
+  .ham-menu {
+    display: none;
+  }
+
+}
+
+@media screen and (min-width : 768px) {
+  .list {
+    grid-template-columns: repeat(2, minmax(260px, 1fr));
+    gap: 1.5em;
+  }
+}
+
+@media screen and (min-width : 990px) {
+  .list {
+    grid-template-columns: repeat(3, minmax(260px, 1fr));
+    gap: 1.5em;
+  }
+  article[resto-id] > p {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (width >= 1200px) {
+  .hero {
+    min-width: 1000px;
+  }
+}

@@ -1,0 +1,125 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Lora', sans-serif;
+  font-size: 12px;
+}
+
+/* HEADER */
+
+header {
+  background: #E4C59E;
+  color: #000519;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.75em;
+  margin: 0 auto;
+  /* font-size: 1.5em; */
+}
+
+header > h1 {
+  font-size: 2.8em;
+  padding-bottom: 0.75em;
+}
+
+/* Navbar */
+
+.ham-menu {
+  border: none;
+  background-color: #E4C59E;
+  font-size: 2em;
+  min-width: 44px;
+  min-height: 44px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+nav ul {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.nav-item {
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+nav a{
+  padding: 1em 2em;
+  display: inline-block;
+  color: #000519;
+  text-decoration: none;
+}
+
+nav a:hover {
+  font-weight: bold;
+  transition: 0.2s ease-in-out;
+}
+
+.open {
+  border-radius: 16px;
+}
+
+/* Hero / Jumbotron */
+.hero{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  min-height: 390px;
+  height: 80%;
+  width: 100%;
+  background-image: url('../public/images/heros/hero-image_2.jpg');
+  background-position: center;
+  color: white;
+  text-shadow: 2px 2px rgb(99, 99, 99);
+}
+
+.hero-text > h1 {
+  font-size: 36px;
+  font-weight: 500;
+  
+}
+
+.hero-text > p {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+/* Main Content */
+section > h2 {
+  font-size: 2.5em;
+  text-align: center;
+  margin: 2em;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* grid-template-columns: repeat(3, minmax(260px, 1fr)); */
+  height: 100%;
+  gap: 2em;
+  margin: 1.5em;
+}
+
+/*  Footer */
+footer {
+  background-color: #E4C59E;
+  padding: 1.5em;
+  text-align: center;
+  font-size: 1.5em;
+}
