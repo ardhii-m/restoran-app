@@ -2,7 +2,6 @@ import 'regenerator-runtime'; /* for async await transpile */
 import '../styles/main.css';
 import '../styles/responsive.css';
 import '../styles/skip-link.css';
-import './utils/restaurant-item.js';
 import App from './views/app.js';
 
 const BASE_URL = 'https://restaurant-api.dicoding.dev';
@@ -21,8 +20,3 @@ window.addEventListener('hashchange', () => {
 window.addEventListener('load', () => {
   app.renderPage();
 });
-
-
-// document.addEventListener('DOMContentLoaded', () => {
-//   displayRestaurant();
-// });

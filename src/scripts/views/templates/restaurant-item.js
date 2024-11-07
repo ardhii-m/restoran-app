@@ -1,3 +1,5 @@
+import CONFIG from "../../globals/config";
+
 class RestaurantItem extends HTMLElement {
   constructor() {
     super();
@@ -27,6 +29,7 @@ class RestaurantItem extends HTMLElement {
         flex-direction: column;
         gap: 0.5em;
         background-color: white;
+        box-shadow: 10px 1px 16px -4px rgba(0,0,0,0.43);
       }
 
       img {
@@ -36,6 +39,15 @@ class RestaurantItem extends HTMLElement {
       h3 {
         font-size: 1.5rem;
         margin-top: 0.5em;
+      }
+
+      h3 > a {
+      color: black;
+      text-decoration: none;
+      }
+
+      h3 > a:hover {
+        color: red;
       }
 
       article[resto-id] > p {
@@ -74,7 +86,7 @@ class RestaurantItem extends HTMLElement {
     this.innerHTML += `
       <article tabIndex="0" resto-id="${this._resto.id}">
       <img src="https://restaurant-api.dicoding.dev/images/medium/${this._resto.pictureId}" alt="${this._resto.name}" class="restaurant-img">
-      <h3><a>${this._resto.name}</a></h3>
+      <h3><a href="/#/detail/${this._resto.id}">${this._resto.name}</a></h3>
       <p>Rating: ${this._resto.rating}</p>
       <p>City: ${this._resto.city}</p>
       <p>${this._resto.description}</p>
